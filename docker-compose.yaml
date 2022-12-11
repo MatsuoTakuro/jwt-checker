@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+  app:
+    image: jwt-checker
+    build:
+      args:
+        - target=dev
+    environment:
+      PORT: 8080
+    volumes:
+      - .:/app
+    ports:
+      - "18888:8080"
+    env_file:
+      - .env

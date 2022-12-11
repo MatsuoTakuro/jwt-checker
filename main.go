@@ -23,7 +23,7 @@ func main() {
 		fmt.Println("error:", err)
 		return
 	}
-	err = os.WriteFile("./idtoken/header.json", h, 0644)
+	err = os.WriteFile("/app/idtoken/header.json", h, 0644)
 	if err != nil {
 		fmt.Println("error:", err)
 		return
@@ -34,7 +34,7 @@ func main() {
 		fmt.Println("error:", err)
 		return
 	}
-	err = os.WriteFile("./idtoken/payload.json", p, 0644)
+	err = os.WriteFile("/app/idtoken/payload.json", p, 0644)
 	if err != nil {
 		fmt.Println("error:", err)
 		return

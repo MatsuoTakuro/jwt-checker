@@ -1,2 +1,2 @@
-idtoken/*
-pubkey/*
+.env
+idtoken/*.json
